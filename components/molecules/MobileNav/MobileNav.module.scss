@@ -1,0 +1,44 @@
+.mobileNav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+
+	@media screen and (min-width: $media-md) {
+		visibility: hidden;	
+	}
+
+    .top {
+        margin-right: -40px;
+		display: flex;
+		justify-content: center;
+		z-index: 10;
+		margin-bottom: .5rem;
+
+		h1 {
+			font-weight: bold;
+			text-align: center;
+			font-size: 1.5rem;
+			line-height: 2rem;
+			padding-right: 2.5rem;
+		}
+
+		button {
+			color: $vives-sand-dark;
+			height: 1.75rem;
+		}
+    }
+    
+    .rectangle {
+        margin-right: -10vw;
+        height: 52px;
+        width: 90vw;
+    }
+
+    .rectangleBig {
+        height: 178px;
+        width: 90vw;
+        margin-right: -10vw;
+    }
+}

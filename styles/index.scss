@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=optional');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&display=optional');
+
+// Font
+html,
+body {
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
+	color: $vives-black;
+	background-color: $vives-white;
+	position: relative;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+input {
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+// Whitespace
+.ml-2 {
+	margin-left: 0.5rem;
+}
+
+@media screen and (min-width: $media-lg) {
+	.input-mr-2 {
+		margin-left: 0.5rem;
+	}
+}
+
+.m-auto {
+	margin: auto;
+}
+
+.mx-2 {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.mb-8 {
+	margin-bottom: 2rem;
+}
+
+.mb-9 {
+	margin-bottom: 2.25rem;
+}
+
+.mt-2 {
+	margin-top: 0.5rem;
+}
+
+.pt-3 {
+	padding-top: 0.75rem;
+}
+
+.container {
+	max-width: 1440px;
+	overflow-x: hidden;
+}
+
+// Flex
+.flex {
+	display: flex;
+}
+
+.lg-flex {
+	@media screen and (min-width: $media-lg) {
+		display: flex;
+	}
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.items-center {
+	align-items: center;
+}
+
+// Text
+.underline {
+	text-decoration: underline;
+}
+
+.stroke-current {
+	stroke: currentColor;
+}
+
+.text-xs {
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.link {
+	color: $vives-black;
+}
+
+// Appearance
+
+.opacity-40 {
+	opacity: 0.4;
+}
+
+.opacity-50 {
+	opacity: 0.5;
+}
+
+.opacity-90 {
+	opacity: 0.9;
+}
+
+.hidden {
+	display: none;
+}
+
+// Control
+.cursor-pointer {
+	cursor: pointer;
+}
+
+// Transition
+.transition-transform {
+	transition-property: transform;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+
+.transition-all {
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+
+.rotate-180 {
+	transform: rotate(180deg);
+}
+
+.rotate-0 {
+	transform: rotate(0);
+}
+
+.error {
+	color: $vives-red;
+	fill: $vives-red;
+}
+
+fieldset {
+	border: none;
+
+	label > div {
+		width: 100%;
+	}
+}

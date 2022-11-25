@@ -1,0 +1,31 @@
+.uploadFile {
+	margin-bottom: 1rem;
+
+	.uploadMessage {
+		margin-top: .5rem;
+		border: 1px dashed $vives-sand-light;
+		padding: 1rem;
+		cursor: pointer;
+		background-color: $vives-white;
+
+		&:hover,
+		&:focus {
+			border-color: $vives-sand-dark;
+			color: $vives-black;
+		}
+	}
+
+	.fileFilledTrue {
+		color: $vives-black;
+		border: $vives-black;
+	}
+
+	.fileFilledFalse {
+		color: $vives-black-40;
+	}
+
+	.error {
+		font-size: 14px;
+		color: $vives-red;
+	}
+}

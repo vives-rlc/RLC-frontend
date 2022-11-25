@@ -1,0 +1,66 @@
+.nav {
+	display: flex;
+	height: 100%;
+	align-items: center;
+
+	li {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		position: relative;
+
+		.header {
+			color: $vives-sand-dark;
+			font-weight: bold;
+			
+		}
+	}
+
+	.footer {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.active, 
+	.link:hover {
+		background: #306189;
+
+		a {
+			color: #FDFDFD;
+		}
+	}
+
+	.link:hover::after, 
+	.link:hover::before,
+	.active::after,
+	.active::before {
+		content: "";
+		background: #306189;
+		position: absolute;
+		left: 0;
+		right: -0;
+		height: 8px;
+	}
+
+	.link:hover::after,
+	.active::after {
+		bottom: -4px;
+	}
+
+	.link:hover::before,
+	.active::before {
+		top: -4px;
+	}
+}
+
+.no-header {
+	flex-direction: column;
+	align-items: center;
+}
+
+
+

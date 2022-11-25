@@ -1,0 +1,38 @@
+.reservationCard {
+	font-size: 1rem;
+	margin: 0 2rem;
+
+	& > div {
+		border-bottom: 1px solid $vives-sand-dark;
+
+		h4 {
+			font-weight: 600;
+			margin-top: 24px;
+			margin-bottom: 0;
+		}
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		p {
+			margin-top: 8px;
+		}
+
+		button {
+			margin-bottom: 16px;
+		}
+	}
+
+	.course {
+		text-transform: uppercase;
+		color: $vives-black-80;
+		font-size: 0.75rem;
+		text-align: right;
+	}
+}
+
+.demiButton {
+	width: 50%;
+	margin-left: auto;
+}

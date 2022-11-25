@@ -1,0 +1,21 @@
+.buttonRow {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1440px;
+	margin: 0 auto 36px;
+
+	button {
+		width: fit-content;
+
+		a {
+			color: $vives-white;
+			text-decoration: none;
+		}
+	}
+}
+
+.terminalContainer {
+	width: 90vw;
+	justify-content: center;
+	align-items: center;
+}

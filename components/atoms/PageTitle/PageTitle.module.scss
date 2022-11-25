@@ -1,0 +1,40 @@
+.page-title {
+	color: $vives-black;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	margin-top: 2rem;
+
+	svg {
+		margin-top: 18px;
+		min-width: 24px;
+
+		@media screen and (min-width: $media-lg) {
+			margin-top: 22px;
+		}
+	}
+
+	button {
+		margin-bottom: 1rem;
+		margin-left: 8px;
+
+		svg {
+			margin: 0;
+			height: 16px;
+			width: 16px;
+		}
+	}
+
+	div {
+		padding-left: 16px;
+		max-width: 320px;
+	}
+
+	@media screen and (min-width: $media-lg) {
+		font-size: 2rem;
+	}
+}

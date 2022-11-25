@@ -1,0 +1,91 @@
+.header {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: center;
+
+	.title {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+		p {
+			font-size: 14px;
+			margin: 0;
+
+			@media screen and (min-width: $media-md) {
+				font-size: 20px;
+			}
+		}
+
+		@media screen and (min-width: $media-md) {
+			font-size: 34px;
+		}
+
+		@media screen and (min-width: $media-xl) {
+			margin-right: 20vw;
+		}
+	}
+
+	@media screen and (min-width: $media-md) {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	@media screen and (min-width: $media-lg) {
+		flex-direction: row;
+		justify-content: space-between;
+		padding-left: 8rem;
+		padding-right: 8rem;
+	}
+
+	a {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		img {
+			width: 7rem;
+			height: auto;
+
+			@media screen and (min-width: $media-xl) {
+				width: 10rem;
+			}
+		}
+
+		p {
+			color: $vives-black-20;
+			font-weight: bold;
+		}
+	}
+
+	.navBox {
+		height: 88px; 
+		background-color: $vives-black-40;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+		position: relative;
+		visibility: hidden;
+
+		@media screen and (min-width: $media-lg) {
+			padding-right: 0;
+			display: flex;
+		}
+		
+		&::after {
+			background-color: $vives-black-40;
+			opacity: .2;
+			position: absolute;
+			bottom: 0;
+			top: 0;
+			content: "";
+			width: 15vw;
+			right: -15vw;
+		}
+	}
+}

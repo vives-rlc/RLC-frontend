@@ -1,0 +1,41 @@
+.availability {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	@media screen and (min-width: $media-xs) {
+		max-width: 242px;
+		margin: auto;
+	}
+	.date {
+		font-weight: 600;
+		color: $vives-red;
+		text-align: center;
+		margin-bottom: 0;
+		font-size: 1rem;
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 8px;
+		border: 1px solid $vives-red;
+		margin-top: -1rem;
+
+		li {
+			padding: 8px 32px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			p {
+				width: 72px;
+			}
+
+			button {
+				height: 36px;
+				width: 120px;
+			}
+		}
+	}
+}

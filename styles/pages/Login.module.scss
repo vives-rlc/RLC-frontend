@@ -1,0 +1,15 @@
+.loginStripes {
+	left: 16vw;
+	bottom: 6vw;
+	width: 50vw;
+	height: 75vw;
+	max-height: 210px;
+
+	@media screen and (min-width: $media-md) {
+		left: 28vw;
+		bottom: -1vw;
+		width: 20vw;
+		height: auto;
+		max-height: none;
+	}
+}

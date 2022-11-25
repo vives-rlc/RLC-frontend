@@ -1,0 +1,54 @@
+.registerForm {
+	padding: 1.5rem;
+	padding-top: 0;
+	margin: 32px auto;
+	box-shadow: $shadow-general;
+	background-color: $vives-white;
+	border-radius: 2px;
+	max-width: 760px;
+	z-index: 0;
+	position: relative;
+
+	@media screen and (min-width: $media-lg) {
+		width: 50vw;
+	}
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+
+		div {
+			width: 100%;
+			max-width: 496px;
+			margin: auto;
+
+			@media screen and (min-width: $media-xs) {
+				margin: auto;
+			}
+		}
+
+		h1 {
+			margin-bottom: 2.5rem;
+		}
+	}
+
+    button {
+		max-width: 512px;
+		margin-top: 2.5rem;
+    }
+}
+
+.success {
+	text-align: center;
+	color: $vives-black-20;
+	margin: 2.5rem 1.5rem 0 1.5rem;
+}
+
+.error {
+	text-align: center;
+	color: $error;
+	margin: 2.5rem 1.5rem 0 1.5rem;
+}

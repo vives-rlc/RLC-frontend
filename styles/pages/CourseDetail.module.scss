@@ -1,0 +1,152 @@
+.courseDetails {
+	.backgroundStripes {
+		left: 10vw;
+		top: -1vw;
+		width: 50vw;
+		height: 75vw;
+		max-height: 210px;
+
+		@media screen and (min-width: $media-md) {
+			left: 30vw;
+			width: 33vw;
+			height: auto;
+			max-height: none;
+		}
+	}
+
+	@media screen and (min-width: $media-lg) {
+		min-width: 50vw;
+	}
+
+	.studentCard {
+		padding: 0 1.5rem;
+
+		h2 {
+			border-top: 2px solid $vives-red;
+		}
+
+		.toDoLab li {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+
+			@media screen and (min-width: $media-md) {
+				flex-direction: row;
+			}
+
+			button {
+				width: fit-content;
+			}
+		}
+
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+
+			li:not(li:last-of-type) {
+				margin-bottom: 1rem;
+			}
+		}
+
+		.toDoLab,
+		.completedLab {
+			li:not(li:last-of-type) {
+				border-bottom: 1px solid $vives-sand-light;
+				padding-bottom: 0.5rem;
+				margin-bottom: 0.5rem;
+			}
+		}
+	}
+
+	.teacherCard {
+		display: flex;
+		flex-direction: column;
+		padding: 1.5rem;
+		padding-top: 0;
+
+		@media screen and (min-width: $media-md) {
+			flex-direction: row;
+		}
+
+		.students {
+			margin-left: 8px;
+
+			@media screen and (min-width: $media-md) {
+				width: 50%;
+			}
+
+			ul > li {
+				border-bottom: 1px solid $vives-sand-light;
+
+				& > p {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.labs {
+			margin-right: 8px;
+
+			@media screen and (min-width: $media-md) {
+				width: 50%;
+			}
+
+			.labDetail button {
+				width: 100%;
+			}
+		}
+
+		ul {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			list-style-type: none;
+			padding-left: 0;
+
+			@media screen and (min-width: $media-md) {
+				max-width: 25vw;
+			}
+		}
+	}
+
+	button {
+		svg {
+			margin-right: 8px;
+		}
+	}
+
+	.editCourse {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 24px;
+
+		h1 {
+			div {
+				max-width: unset;
+			}
+		}
+
+		button {
+			width: fit-content;
+			padding: 8px;
+
+			svg {
+				margin-right: 0;
+			}
+		}
+	}
+
+	ul {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		list-style-type: none;
+		padding-left: 0;
+
+		li {
+			margin-bottom: 1rem;
+		}
+	}
+}

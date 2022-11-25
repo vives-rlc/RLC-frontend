@@ -1,0 +1,40 @@
+.button {
+	border: none;
+	border-radius: 0.5rem;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	padding: 8px 24px;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+
+	&:hover:not([disabled]) {
+		opacity: 100;
+		cursor: pointer;
+	}
+
+	&:active:not([disabled]),
+	&:focus:not([disabled]) {
+		background-color: $vives-red;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+	}
+}
+
+.primary {
+	background-color: $vives-black;
+	color: $vives-white;
+	font-weight: 700;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+.secondary {
+	background-color: $vives-sand-light;
+	color: $vives-black;
+	font-weight: 700;
+	box-shadow: $shadow-bottom;
+}

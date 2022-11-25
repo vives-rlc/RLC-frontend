@@ -1,0 +1,30 @@
+.tooltiptext {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	max-width: 36rem;
+	position: absolute;
+	top: 1.5rem;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	background: $vives-black-20;
+	padding: 1.25rem 1rem;
+	color: $vives-black-80;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	font-weight: 300;
+	box-shadow: $shadow-bottom;
+	border-radius: 0.375rem;
+
+	@media screen and (min-width: $media-md) {
+		margin: auto;
+	}
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}

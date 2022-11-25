@@ -1,0 +1,38 @@
+.notification {
+	position: fixed;
+	bottom: 5%;
+	right: 24px;
+	left: 24px;
+	max-width: 458px;
+	background-color: $vives-sand-light;
+	z-index: 10;
+	flex-direction: column;
+	padding: 8px;
+	border-radius: 8px;
+	box-shadow: $shadow-general;
+
+	@media screen and (min-width: $media-xs) {
+		left: unset;
+	}
+
+	svg {
+		align-self: flex-end;
+		cursor: pointer;
+	}
+
+	p {
+		background-color: $vives-sand-light;
+		padding: 0 8px;
+	}
+
+	.name {
+		font-weight: 700;
+	}
+
+	button {
+		background-color: $vives-red;
+		color: $vives-white;
+		width: 128px;
+		margin: auto;
+	}
+}

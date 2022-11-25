@@ -1,0 +1,31 @@
+.footer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+	padding: 1rem 3rem 2rem 3rem;
+	width: 100%;
+
+	@media screen and (min-width: $media-md) {
+		flex-direction: row;
+	}
+
+	span {
+		padding: 0 3rem;
+
+		@media screen and (min-width: $media-lg) {
+			padding: 0 7rem;
+		}
+	}
+
+	a {
+		color: $vives-black;
+		text-decoration: none;
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: underline;
+		}
+	}
+}

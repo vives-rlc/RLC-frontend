@@ -1,0 +1,81 @@
+.table {
+	border-left: 1px solid $vives-sand-light;
+	display: block;
+	width: 80vw;
+	overflow-x: scroll;
+	white-space: nowrap;
+	max-width: 1200px;
+
+	button {
+		padding: 8px;
+		display: flex;
+		justify-content: center;
+
+		svg {
+			width: fit-content;
+			margin: 0;
+		}
+	}
+
+	@media screen and (min-width: $media-xxl) {
+		overflow-x: hidden;
+	}
+
+	th,
+	td {
+		margin: 0;
+		padding: 0.5rem;
+		border-bottom: 1px solid $vives-sand-light;
+		border-right: 1px solid $vives-sand-light;
+
+		&:last-child {
+			width: 100%;
+		}
+	}
+
+	th {
+		border-top: 1px solid $vives-sand-light;
+		vertical-align: top;
+		text-align: left;
+	}
+
+	.filter {
+		position: relative;
+		margin: 0.25rem 0;
+
+		select {
+			appearance: none;
+			background-color: $vives-white;
+			padding: 0.5rem;
+			box-shadow: $shadow-bottom;
+			border: 1px solid $vives-black-20;
+			border-radius: 4px;
+			width: 100%;
+			color: $vives-black;
+			font-family: 'Poppins', Arial, Helvetica, sans-serif;
+
+			&:hover,
+			&:focus {
+				border-color: $vives-sand-dark;
+			}
+
+			&::placeholder {
+				font-weight: 300;
+			}
+		}
+
+		svg {
+			position: absolute;
+			right: 0.75rem;
+			bottom: 0.6rem;
+			width: 0.5rem;
+			pointer-events: none;
+			transition: transform;
+
+			@media screen and (min-width: $media-lg) {
+				width: 0.75rem;
+				height: 0.5rem;
+			}
+		}
+	}
+}

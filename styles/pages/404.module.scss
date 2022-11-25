@@ -1,0 +1,46 @@
+.fourOFourPage {
+	padding: 1.5rem;
+	padding-top: 0;
+
+	.bgStripes {
+		left: 16vw;
+		top: 0;
+		width: 50vw;
+		height: 75vw;
+		max-height: 210px;
+
+		@media screen and (min-width: $media-md) {
+			left: 28vw;
+			bottom: -1vw;
+			width: 33vw;
+			height: auto;
+			max-height: none;
+		}
+	}
+
+	.number {
+		display: flex;
+		justify-content: center;
+
+		span {
+			font-weight: bold;
+			font-size: 64px;
+			line-height: 80px;
+			color: $vives-red;
+
+			@media screen and (min-width: $media-md) {
+				font-size: 164px;
+				line-height: 194px;
+			}
+		}
+
+		span:not(span:last-of-type) {
+			margin-right: 40px;
+		}
+
+		span:last-of-type {
+			display: inline-block;
+			transform: rotate(68deg);
+		}
+	}
+}

@@ -1,0 +1,109 @@
+.profile {
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1440px;
+	width: 100%;
+	background-color: $vives-sand-light;
+	margin-bottom: 4rem;
+
+	@media screen and (min-width: $media-md) {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	@media screen and (min-width: $media-lg) {
+		padding-left: 8rem;
+		padding-right: 8rem;
+	}
+
+	.subTitle {
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-left: 1.5rem;
+		color: $vives-black-80;
+
+		@media screen and (min-width: $media-md) {
+			margin-left: 8rem;
+		}
+
+		@media screen and (min-width: $media-lg) {
+			margin-left: 18rem;
+		}
+	}
+
+	&:hover ul,
+	&:active ul,
+	&:focus ul {
+		visibility: visible;
+	}
+
+	ul {
+		list-style-type: none;
+		visibility: hidden;
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 72%;
+		margin-left: -60px;
+		background-color: $vives-white;
+		box-shadow: $shadow-general;
+		padding: 8px;
+		border-radius: 8px;
+		cursor: pointer;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 100%;
+			left: 60%;
+			margin-left: -5px;
+			background-color: $vives-white;
+			border-width: 5px;
+			border-style: solid;
+			border-color: $vives-sand-light $vives-sand-light $vives-white
+				$vives-sand-light;
+		}
+
+		li {
+			cursor: pointer;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.person {
+		display: flex;
+		align-items: center;
+		margin-right: 1.5rem;
+
+		@media screen and (min-width: $media-md) {
+			margin-right: 8rem;
+		}
+
+		@media screen and (min-width: $media-lg) {
+			margin-right: 18rem;
+		}
+
+		svg {
+			width: 16px;
+			height: auto;
+
+			@media screen and (min-width: $media-md) {
+				min-width: 28px;
+			}
+		}
+
+		p {
+			margin-left: 1rem;
+
+			@media screen and (min-width: $media-md) {
+				margin-left: 2rem;
+			}
+		}
+	}
+}

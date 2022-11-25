@@ -1,0 +1,30 @@
+.createCourse {
+	position: relative;
+
+	h1 {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	@media screen and (min-width: $media-md) {
+		width: 120%;
+		margin-left: -10%;
+	}
+
+	& > svg {
+		top: -1rem;
+		left: -1rem;
+	}
+
+	& > div > form {
+		margin: 0 2rem;
+
+		button {
+			margin: 2rem 0 1rem;
+		}
+
+		& > label > div {
+			width: 100%;
+		}
+	}
+}

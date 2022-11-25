@@ -1,0 +1,15 @@
+.react-calendar__tile {
+	padding: 6px 4px;
+}
+
+.react-calendar__tile--active:enabled:focus,
+.react-calendar__tile--active:enabled {
+	background-color: $vives-red;
+	border-radius: 100%;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+	abbr {
+		opacity: 0.5;
+	}
+}

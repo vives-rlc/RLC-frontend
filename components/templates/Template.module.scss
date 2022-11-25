@@ -1,0 +1,51 @@
+.template {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	min-height: 100vh;
+
+	header {
+		z-index: 20;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		position: relative;
+		height: 100%;
+		width: 100%;
+
+		& > div {
+			z-index: 10;
+		}
+
+		@media screen and (min-width: $media-md) {
+			padding-left: 4rem;
+			padding-right: 4rem;
+		}
+
+		@media screen and (min-width: $media-lg) {
+			padding-left: 6rem;
+			padding-right: 6rem;
+		}
+
+		@media screen and (min-width: $media-xl) {
+			padding-left: 8rem;
+			padding-right: 8rem;
+		}
+	}
+
+	.content-wrap {
+		padding-bottom: 4rem;
+	}
+
+	footer {
+		z-index: 10;
+		bottom: 0;
+	}
+}
